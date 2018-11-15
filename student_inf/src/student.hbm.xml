@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+          "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+          "http://hibernate.sourceforge.net/hibernate-mapping-5.3.dtd">
+          <hibernate-mapping>
+          <class name="com.klkgroup.student" table="student">
+          <id name="student_id" column="student_id">
+          <generator class="assigned"/>
+          </id>
+          <property name="student1_name" column="student1_name"/>
+          <property name="student_age" coloumn="student_age/>"
+          </class>
+          </hibernate-mapping>

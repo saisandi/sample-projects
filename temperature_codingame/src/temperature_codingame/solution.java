@@ -28,10 +28,15 @@ public class solution {
 				temp_al_neg.add(temp_al.get(i));
 			}
 		}
+		
 		System.out.println("given positve values:"+temp_al_pos);
 		System.out.println("given negative values:"+temp_al_neg);
-		int min_value_pos=Collections.min(temp_al_pos);
-		int min_value_neg=Collections.max(temp_al_neg);
+		if(temp_al_pos.isEmpty()!=true) {
+			if(temp_al_neg.isEmpty()!=true) {
+	
+			int min_value_pos=Collections.min(temp_al_pos);
+		
+			int min_value_neg=Collections.max(temp_al_neg);
 		
 		if(min_value_pos>Math.abs(min_value_neg)) {
 			result=min_value_neg;
@@ -39,8 +44,19 @@ public class solution {
 		else {
 			result=min_value_pos;
 		}
+		
 		System.out.println("value near the zero is :" +result);
 		}
+		else {
+			result=Collections.min(temp_al_pos);
+			System.out.println(result);
+		}
+		}
+		else {
+			result=Collections.max(temp_al_neg);
+			System.out.println(result);
+		}
+       }
 		else {
 			System.out.println(result);
 		}
